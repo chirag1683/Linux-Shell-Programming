@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    int angle1, angle2, angle3, sum;
+
+    // Accept three angles from the user
+    printf("Enter three angles of the triangle: ");
+    scanf("%d %d %d", &angle1, &angle2, &angle3);
+
+    // Calculate the sum of angles
+    sum = angle1 + angle2 + angle3;
+
+    // Check if the sum is 180
+    if (sum == 180 && angle1 > 0 && angle2 > 0 && angle3 > 0) {
+        printf("The given angles form a valid triangle.\n");
+    } else {
+        printf("The given angles do not form a triangle.\n");
+    }
+
+    return 0;
+}
